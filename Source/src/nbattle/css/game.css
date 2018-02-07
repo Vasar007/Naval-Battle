@@ -1,0 +1,173 @@
+.g_ship:focused, .btn:focused {
+    -fx-background-color: -fx-outer-border, -fx-inner-border, -fx-body-color;
+}
+
+.g_info {
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+    -fx-background-insets: 5px;
+    -fx-background-radius: 25px;
+    -fx-background-color: rgba(0, 0, 0, .4);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 0, 0, 0, 1);
+}
+
+.g_ship {
+    -fx-background-insets: 0; /* removes stupid border */
+
+    -fx-cursor: hand;
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+    -fx-font-size: 16px;
+    -fx-effect: none;
+    -fx-opacity: 1;
+
+    -fx-background-image: url("../images/water.jpg");
+    -fx-background-position: center;
+    -fx-background-size: 324px;
+}
+
+.g_ship:pressed {
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 1), 15, 0, 0, 1);
+}
+
+.g_separator {
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+    -fx-background-color: transparent;
+}
+
+.grid {
+    -fx-padding: 20px;
+    -fx-background-insets: 20px;
+}
+
+.background {
+    -fx-background-image: url("../images/bg-game.jpg");
+}
+
+.cell-empty, .cell-empty:focused {
+    -fx-background-image: url("../images/water.jpg"), url("../images/empty.png");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 324px, 36px;
+}
+
+.cell-body-horizontal, .cell-body-vertical {
+    -fx-background-image: url("../images/water.jpg"), url("../images/body.png");
+    -fx-background-position: center;
+    -fx-background-size: 324px, cover;
+}
+
+.cell-body-vertical {
+    -fx-background-image: url("../images/water-90.jpg"), url("../images/body.png");
+    -fx-background-size: 200px, cover;
+    -fx-rotate: 90deg;
+}
+
+.cell-head-horizontal, .cell-head-vertical {
+    -fx-background-image: url("../images/water-180.jpg"), url("../images/head.png");
+    -fx-background-position: center;
+    -fx-background-size: 324px, cover;
+    -fx-rotate: 180deg;
+}
+
+.cell-head-vertical {
+    -fx-background-image: url("../images/water-270.jpg"), url("../images/head.png");
+    -fx-background-size: 200px, cover;
+    -fx-rotate: 270deg;
+}
+
+.cell-backside-horizontal, .cell-backside-vertical {
+    -fx-background-image: url("../images/water-180.jpg"), url("../images/tail.png");
+    -fx-background-position: center;
+    -fx-background-size: 324px, cover;
+    -fx-rotate: 180deg; /* 0 */
+}
+
+.cell-backside-vertical {
+    -fx-background-image: url("../images/water-270.jpg"), url("../images/tail.png");
+    -fx-background-size: 200px, cover;
+    -fx-rotate: 270deg; /* 90 */
+}
+
+.cell-damaged, .cell-damaged:focused, .cell-killed, .cell-killed:focused {
+    -fx-background-image: url("../images/water.jpg"), url("../images/damaged.png");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 324px, 64px;
+    -fx-rotate: 0;
+}
+
+.no-clickable:pressed {
+    -fx-effect: innershadow(gaussian, rgba(255, 0, 0, 1), 15, 0, 0, 1);
+}
+
+.net-nicks {
+    -fx-padding: 0 0 0 64px;
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-effect: dropshadow(gaussian, black, 1, 1.0, 0, 0);
+}
+
+.right-align {
+    -fx-padding: 0 64px 0 0;
+    -fx-alignment: center-right;
+}
+
+.flow-stat, .flow-stat-right {
+    -fx-pref-width: 250px;
+    -fx-pref-height: 150px;
+    -fx-padding: 0 0 0 20px;
+    -fx-cursor: default;
+}
+
+.flow-stat-right {
+    -fx-padding: 0 20px 0 0;
+}
+
+.ship-stat-head {
+    -fx-background-image: url("../images/head.png");
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-cursor: default;
+}
+
+.ship-stat-body {
+    -fx-background-image: url("../images/body.png");
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-rotate: 180deg;
+    -fx-cursor: default;
+}
+
+.ship-stat-tail {
+    -fx-background-image: url("../images/tail.png");
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-cursor: default;
+}
+
+.last-gap {
+    -fx-hgap: 7px;
+}
+
+.rotate-180 {
+    -fx-rotate: 180deg;
+}
+
+.ship-stat-head:hover, ship-stat-head:pressed, .ship-stat-head:focused,
+.ship-stat-body:hover, ship-stat-body:pressed, .ship-stat-body:focused,
+.ship-stat-tail:hover, ship-stat-tail:pressed, .ship-stat-tail:focused {
+    -fx-effect: none;
+    -fx-cursor: default;
+    -fx-background-color: transparent;
+}
+
+.move-selector {
+    -fx-text-fill: lawngreen;
+}
