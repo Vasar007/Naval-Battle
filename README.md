@@ -6,7 +6,7 @@ Simple and classic battleship game.
 
 | Main menu                                                        |
 |------------------------------------------------------------------|
-| ![Main menu of the game](Media/1.Main_menu.png "Main menu") |
+| ![Main menu of the game](Media/1.Main_menu.png "Main menu")      |
 
 | In game                                                          |
 |------------------------------------------------------------------|
